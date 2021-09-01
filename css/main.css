@@ -1,0 +1,351 @@
+html,
+body {
+    background-color: #e6e0e0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-image: url(../image/iam.jpg);
+    background-size: 100%;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    padding-bottom: 0%;
+    height: 100%;
+}
+
+.biodata {
+    text-align: center;
+}
+
+.profil {
+
+    height: 200px;
+    width: 200px;
+
+
+}
+
+.line {
+    border: 1px solid #0072ff;
+    margin-top: 30px;
+    width: 350px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.line-full {
+    border: 5px solid #0072ff;
+    margin-top: 30px;
+    width: 1340px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.line-satu {
+    border: 1px solid #0072ff;
+    margin-top: 20px;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.line-dua {
+    border: 1px solid #0072ff;
+    margin-top: 20px;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media (max-width: 768px) {
+    .selector {
+        width: 750px;
+    }
+}
+
+.tulisan {
+    color: black;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 15%;
+    text-align: center;
+
+
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #1ccefa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Create a sticky/fixed navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+    /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s;
+    /* Adds a transition effect when the padding is decreased */
+    position: fixed;
+    /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0;
+    /* At the top */
+    z-index: 99;
+}
+
+/* Style the navbar links */
+.judul {
+    color: white;
+}
+
+#navbar {
+    overflow: hidden;
+    padding: 20px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* At the top */
+    z-index: 99;
+    color: #fafafa;
+    background: #00c6ff;
+    background: #00c6ff;
+    background: -webkit-linear-gradient(55deg, 10%, #00c6ff 90%);
+    background: linear-gradient(35deg, #00c6ff 10%, #0072ff 90%);
+}
+
+#navbar a {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo */
+#navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+    background-color: #ddd;
+}
+
+/* Style the active/current link */
+#navbar a.active {
+    background-color: rgb(12, 166, 226);
+    color: white;
+}
+
+.name-nav {
+    font-family: sans-serif;
+    font-size: 35px;
+    left: 100px;
+    position: relative;
+    font-style: normal;
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 980px) {
+    .name-nav {
+        display: none;
+    }
+
+    .line {
+        border: 1px solid #0072ff;
+        margin-top: 30px;
+        width: 200px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .line-full {
+        border: 5px solid #0072ff;
+        margin-top: 30px;
+        width: 300px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .line-satu {
+        border: 1px solid #0072ff;
+        margin-top: 30px;
+        width: 100px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .line-dua {
+        border: 1px solid #0072ff;
+        width: 200px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .bg-text {
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #1ccefa;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Animasi Ketik CSS */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container p span.typed-text {
+    font-weight: normal;
+    color: black;
+}
+
+.container p span.TypeCursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.container p span.TypeCursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: #ccc;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
+
+@media (max-width:750px) {
+    .container p {
+        font-size: 2rem;
+    }
+}
+
+/* End animasi ketik */
+
+/* animasi efek 1 */
+
+.tulisan1 {
+    font-weight: 50px;
+    font-size: 2.5em;
+}
+
+/* end animasi efek 1 */
+.container-image {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+
+}
+
+.overlay {
+    position: relative;
+    bottom: 40px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.container-image:hover .overlay {
+    opacity: 1;
+}
+
+.teks {
+    position: absolute;
+    bottom: 15px;
+}
