@@ -2,7 +2,7 @@ html,
 body {
     background-color: #e6e0e0;
     padding: 0;
-    width: 100%;
+
     height: 100%;
     scroll-behavior: smooth;
 }
@@ -13,7 +13,7 @@ body {
 
 .box {
     filter: blur(8px);
-    -webkit-filter: blur(8px);
+    -webkit-filter: blur(2px);
     background-image: url(../image/iam.jpg);
     background-size: 100%;
     background-attachment: scroll;
@@ -23,6 +23,58 @@ body {
     padding-bottom: 0%;
     height: 100%;
 }
+
+/* box portolio */
+.box-overlay1 {
+    background-color: rgb(196, 185, 185);
+    /* Fallback color */
+    background-color: rgba(170, 164, 164, 0.4);
+    background-size: 100%;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    padding-bottom: 0%;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+
+}
+
+.shadow-box {
+    box-shadow: 10px 10px blue;
+
+}
+
+.shadow {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.shadow:before {
+    position: absolute;
+    z-index: -10;
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.7);
+    content: "";
+}
+
+.simple-shadow:before {
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    height: 50px;
+}
+
+/* end */
 
 .biodata {
     text-align: center;
@@ -171,7 +223,7 @@ body {
 
 /* Style the active/current link */
 #navbar a.active {
-    background-color: rgb(12, 166, 226);
+    border-bottom: 3px #FFF solid;
     color: white;
 }
 
@@ -189,11 +241,12 @@ body {
         display: none;
     }
 
+
     .line {
         border: 1px solid #0072ff;
         margin-top: 30px;
         width: 200px;
-        position: relative;
+
         left: 50%;
         transform: translate(-50%, -50%);
 
@@ -348,4 +401,42 @@ body {
 .teks {
     position: absolute;
     bottom: 15px;
+}
+
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(51, 122, 204) 50%, rgb(0, 204, 255) 60%, rgb(17, 61, 82));
+    bottom: 0;
+    left: -50%;
+    opacity: 1;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+
+h1 {
+    font-family: monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
 }
